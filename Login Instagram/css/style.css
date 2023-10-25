@@ -59,7 +59,7 @@ body {
   margin: 5px auto;
 }
 #login-form input[type="submit"] {
-  background-color: #b2dffc;
+  background-color: rgb(71, 71, 177);
   color: #fff;
   margin-top: 15px;
   border-radius: 5px;
@@ -74,14 +74,14 @@ body {
   position: relative;
 }
 .line {
-  border-top: 1px solid #dbdbdb;
+  border-top: 1px solid #5e5e5e;
   width: 268px;
   margin: 25px auto 35px;
 }
 .separator span {
   position: absolute;
   text-transform: uppercase;
-  color: #bbb;
+  color: #0b0b0b;
   background-color: #fff;
   top: -6px;
   width: 50px;

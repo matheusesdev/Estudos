@@ -7,3 +7,5 @@ console.log(2 + 4);
 console.log(10 - 5);
 console.log(5 * 4);
 console.log(10 / 5);
+
+console.log(5  +4 * 12)

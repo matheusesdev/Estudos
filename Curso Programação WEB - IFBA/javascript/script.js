@@ -15,3 +15,4 @@ function reset (){
     number.innerText = 0;
     return number.innerText;
 }
+

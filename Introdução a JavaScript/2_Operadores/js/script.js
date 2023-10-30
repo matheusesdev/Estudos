@@ -53,6 +53,18 @@ console.log(2 < 9);
 console.log(2 > 9);
 console.log(typeof false);
 
+//9. Comparações
+console.log(5 <= 5);
+console.log(5 < 5);
+console.log(10 == 10);
+console.log(10 == 9);
+console.log(10 != 9);
+
+// 10. Idêntico.
+
+console.log(9 == "9");
+console.log(9 === "9");
+console.log(9 != "9");
 
 
 

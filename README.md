@@ -22,4 +22,4 @@ Se você gostaria de contribuir com seu próprio projeto, tutorial, ou recurso d
 2. Clone o seu fork para o seu ambiente local:
 
    ```bash
-   git clone [https://github.com/seu-usuario/Estudos.git](https://github.com/matheusesdev/Estudos.git)https://github.com/matheusesdev/Estudos.git
+   git clone git clone https://github.com/matheusesdev/Estudos.git

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador Dinâmico</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="container">
+        <h1 id="title">Contador Dinâmico</h1>
+        <div id="number">0</div>
+        <h1 id="text-number"></h1>
+        <div id="buttons">
+            <button id="sub" onclick="subtraction()"><i class="fa-solid fa-minus"></i></button>
+            <button id="add" onclick="sum()"><i class="fa-solid fa-plus"></i></button>
+            <button id="reset" onclick="reset()"><i class="fa-solid fa-arrows-rotate"></i></button>
+        </div>
+        <button id="toggleBtn" onclick="toggleNegative()" class="active">SOMENTE POSITIVOS</button>
+    </div>
+</body>
+</html>

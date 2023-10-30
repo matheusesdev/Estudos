@@ -18,6 +18,8 @@ body{
     margin:auto;
     justify-content: center;
     align-items: center;
+    border-radius: 10px;
+    border-style: none;
 }
 #title{
     padding: 50px;
@@ -50,19 +52,23 @@ cursor: pointer;
 #reset{
     background-color: rgb(202, 202, 82);
 }
+.active{
+    background-color: #4caf50;
+    color: black;
+}
 #toggleBtn{
-    padding: 20px;
-    margin-bottom: 20px;
-    font-size: 15px;
-    font-weight: bold;
-    background-color: rgb(30, 153, 122);
-    border-radius: 10px;
-    border-style: none;
+   padding: 20px;
+   margin-bottom: 20px;
+   border-style: none;
+   border-radius: 10px;
+   font-size: 15px;
+   cursor: pointer;
 }
 #text-number{
     color: #c3e7e8;
     margin-bottom: 10px;
-    border: 1px solid #c3e7e8;
-    padding: 8px;
+    padding: 20px;
     display: none;
+    border-style: none;
+    font-size: 20px;
 }

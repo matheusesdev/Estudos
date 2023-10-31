@@ -14,4 +14,4 @@ Neste projeto, recriei a página de login do Instagram para aprimorar minhas hab
 
 ## Pré-visualização do Projeto
 
-![Uploading image.png…]()
+![Alt text](image-1.png)

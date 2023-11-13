@@ -41,3 +41,6 @@ let texto = "Olá, mundo!"; // Declara uma variável chamada texto e atribui a e
 
 // Este código ilustra o uso de variáveis para armazenar diferentes tipos de dados, como números inteiros, decimais e strings, conforme mencionado no texto.
 
+//Estruturas de Controle: mecanismos para controlar o fluxo de execução do programa. Isso inclui estruturas condiocionais (if, else) para tomar decisões e estruturas de repetição (loops) para executar tarefas repetitivas.
+
+

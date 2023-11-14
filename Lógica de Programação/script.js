@@ -11,7 +11,7 @@ if (10 % 2 === 0) {
 /* Objetivo: O algoritmo tem como objetivo verificar se o número 10 é par ou ímpar.
      
     Processamento:
-    1. Utiloza o operador de módulo para verificar se o resto da divisão de 10 por 2 é igual a 0.
+    1. Utiliza o operador de módulo para verificar se o resto da divisão de 10 por 2 é igual a 0.
     2. Compara se o resto da divisão é igual a 0.
     
     Decisão (Estrutura condicional):
@@ -60,3 +60,43 @@ for(let i = 1; i = <= 5; i ++){ //Implementa um loop for que conta de 1 a 5 e ex
 }
 
 //Este código ilustra o uso de estruturas de controla para tomar decisões com base em condições (if, else) e para executar tarefas repetitivas (for))
+
+//Funções e Procedimentos
+//Função para verificar se um número é par ou ímpar
+
+function parOuImpar (numero){
+  return numero % 2 === 0 ? 'par' : 'ímpar';
+}
+
+//Função para exibir uma mensagem formatada
+function exibirMensagem(numero, paridade){
+  console.log('${numero} é ${paridade}.');
+}
+
+//Utilizando as funções
+let numero1 = 10;
+let numero2 = 7;
+
+
+//Chamando as funções e exibindo mensagens
+
+exibirMensagem (numero1, parOuImpar(numero1));
+exibirMensagem (numero2, parOuImpar(numero2));
+
+
+//Lógica booleana
+
+//Exemplo de lógica booleana e estrutura de controle condicional
+
+let temCafe = true;
+let temPao = false;
+
+//Verificando se há café e pão para o café da manhã
+
+if (temCafe && !temPao){
+  console.log("Vamos tomar café com café, mas não temos pão.");
+} else if (temCafe || temPao){
+  console.log ("Temos pelo menos uma coisa para o café da manhã.");
+} else {
+  console.log("Não temos café nem pão para o café da manhã.");
+}

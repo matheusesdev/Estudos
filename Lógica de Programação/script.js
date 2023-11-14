@@ -42,5 +42,21 @@ let texto = "Olá, mundo!"; // Declara uma variável chamada texto e atribui a e
 // Este código ilustra o uso de variáveis para armazenar diferentes tipos de dados, como números inteiros, decimais e strings, conforme mencionado no texto.
 
 //Estruturas de Controle: mecanismos para controlar o fluxo de execução do programa. Isso inclui estruturas condiocionais (if, else) para tomar decisões e estruturas de repetição (loops) para executar tarefas repetitivas.
+// Exemplo de estrutura condicional (if, else)
+let numero = 15; //Declara uma variável numero e atribui a ela o valor 15.
+if (numero % 2 === 0){
+  console.log(`${numero} é par.0`);
+} else{
+  console.log(`${numero} é impar.`)
+}
+// If e Else: utiliza uma estrutura condicional para verificar se o numero é par ou ímpar. Se for par, exibe uma mensagem indicando que é par; se caso contrário, exibe uma mensagem indicando que é ímpar.
 
 
+//Exemplo de estrutura de repetição (for)
+console.log("Contando de 1 a 5:");
+
+for(let i = 1; i = <= 5; i ++){ //Implementa um loop for que conta de 1 a 5 e exibe cada número no console.
+  console.log(i);
+}
+
+//Este código ilustra o uso de estruturas de controla para tomar decisões com base em condições (if, else) e para executar tarefas repetitivas (for))

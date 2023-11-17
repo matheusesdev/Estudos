@@ -55,10 +55,11 @@ if (numero % 2 === 0){
 //Exemplo de estrutura de repetição (for)
 console.log("Contando de 1 a 5:");
 
-for(let i = 1; i = <= 5; i ++){ //Implementa um loop for que conta de 1 a 5 e exibe cada número no console.
+for(let i = 0; i < 10; i++) {
   console.log(i);
 }
 
+//Este código ilustra o uso de estruturas de controle para tomar decisões com base em condições (if, else) e para executar tarefas repetitivas (for))
 //Este código ilustra o uso de estruturas de controla para tomar decisões com base em condições (if, else) e para executar tarefas repetitivas (for))
 
 //Funções e Procedimentos

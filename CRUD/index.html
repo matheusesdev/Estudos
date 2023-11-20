@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD DE PRODUTOS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<form>
+    <h1>Meus Produtos Online</h1>
+
+<form id="productform">
+    <label for="productName">Nome do Produto:</label>
+    <input type="text" id="productName">
+
+    <label for="productPrice">Preço do Produto:</label>
+    <input type="text" id="productPrice">
+
+    <label for="productQtd">Quantidade do Produto:</label>
+    <input type="text" id="productQtd">
+
+    <button type="submit">Adicionar o Produto</button>
+</form>
+
+<table id="productTable">
+    <thead>
+        <tr>
+            <th>Código</th>
+            <th>Nome do Produto</th>
+            <th>Preço do Produto</th>
+            <th>Quantidade em Estoque</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Conteúdo da Tabela que será preenchido dinâmicamente via JavaScript. -->
+    </tbody>
+</table>
+</body>
+</html>

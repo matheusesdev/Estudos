@@ -101,3 +101,92 @@ if (temCafe && !temPao){
 } else {
   console.log("Não temos café nem pão para o café da manhã.");
 }
+
+//Arrays e Estruturas de dados.
+
+//Exemplo de uso de arrays (vetores) - lista de compras
+let listaDeCompas = ['Maçãs', 'Bananas', 'Leite', 'Pão', 'Ovos'];
+
+//Adicionando um item à lista
+listaDeCompas.push ('Queijo');
+
+//Exibindo os itens da lista no console
+console.log('Itens na lista de compras:');
+for(let item of listaDeCompras){
+  console.log(item);
+}
+
+//Verificando se a lista contém leite
+ if (listaDeCompras.includes('Leite')){
+  console.log('Lista OK, o leite já está incluído');
+ } else{
+  console.log('Você precisa comprar Leite!');
+ }
+
+
+//Recursividade
+
+//Exemplo de recursividade - Cálculo de fatorial
+function calcularFatorial(numero) {
+  //Caso base: fatorial de 0 é 1
+  if (numero === 0) {
+    return 1;
+  } else {
+    //Chamada recursiva: fatorial(n) = n * fatorial(n - 1)
+    return numero * calcularFatorial(numero - 1);
+  }
+}
+//Calculando o fatorial de 5
+let resultadoFatorial = calcularFatorial(5);
+
+//Exibindo o resultado
+console.log('O fatorial de 5 é:', resultadoFatorial);
+
+
+//Orientação a Objetos.
+
+//Definindo a classe carro.
+
+class Carro {
+  //Construtor para inicializar as propriedades do carro.
+  constructor(modelo, cor){
+    this.modelo = modelo;
+    this.cor = cor;
+    this.ligado = false; //O carro começa desligado.
+  }
+  //Método para ligar o carro.
+  ligar(){
+    if (!this.ligado){
+      console.log(`Ligando o carro ${this.modelo}...`);
+      this.ligado = true;
+    }else{
+        console.log(`O carro ${this.modelo} já está ligado.`);
+      }
+    }
+
+    //Método para desligar o carro.
+    desligar(){
+      if(this.ligado){
+        console.log(`Desligando o carro ${this.modelo}...`);
+        this.ligado = false;
+      } else{
+          console.log(`O carro ${this.modelo} já está desligado`);
+        }
+      }
+    }
+  
+  //Criando instâncias da classe Carro.
+
+  const carro1 = new Carro ("Focus", "Preto");
+  const carro2 = new Carro ("Fusion", "Branco");
+
+  //Interagindo com os carros.
+  carro1.ligar();
+  carro2.ligar();
+  carro1.desligar();
+  carro2.desligar();
+
+
+  
+
+

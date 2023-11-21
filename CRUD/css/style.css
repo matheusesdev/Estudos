@@ -1,4 +1,5 @@
 body{
+    font-family: 'Roboto', sans-serif;
     background-color: #f4f4f4;
     color: #333;
     margin: 20px;
@@ -37,4 +38,27 @@ button{
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    
 }
+
+button:hover{
+ background-color: #45e049;
+}
+
+table{
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th{
+    padding: 12px;
+    text-align: center;
+    background-color: #4caf50;
+    color: white;
+}
+

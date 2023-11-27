@@ -45,7 +45,7 @@ let texto = "Olá, mundo!"; // Declara uma variável chamada texto e atribui a e
 // Exemplo de estrutura condicional (if, else)
 let numero = 15; //Declara uma variável numero e atribui a ela o valor 15.
 if (numero % 2 === 0){
-  console.log(`${numero} é par.0`);
+  console.log(`${numero} é par.`);
 } else{
   console.log(`${numero} é impar.`)
 }

@@ -1,6 +1,41 @@
 class ProductCrud {
   constructor() {
-    this.products = [];
+    this.products = [
+      {
+        id: this.generateProductId() ,
+        name: 'Ração premium 50KG ',
+        price: 14.94 ,
+        qtdEstoque: 10
+      }, 
+      {
+        id: this.generateProductId() ,
+        name: 'Ração Gold 50KG',
+        price: 250.5 ,
+        qtdEstoque: 20
+      }, 
+
+      {
+        id: this.generateProductId() ,
+        name: 'Coleira para Gaato',
+        price: 30.70 ,
+        qtdEstoque: 44
+      }, 
+
+      {
+        id: this.generateProductId() ,
+        name: 'Shampoo para Pets',
+        price: 12.70 ,
+        qtdEstoque: 22
+      }, 
+      {
+        id: this.generateProductId() ,
+        name: 'Banheiro Inteligente',
+        price: 500.0,
+        qtdEstoque: 3
+      }, 
+
+
+    ];
   }
 
   //Adicionar um produto
@@ -13,6 +48,7 @@ class ProductCrud {
     return this.products;
   }
 
+  //Obter um produto por ID.
   getProductById(id) {
     return this.products.find((product) => Number(product.id) === Number(id));
   }
@@ -31,6 +67,18 @@ class ProductCrud {
       this.products[index] = { ...this.products[index], ...updateProduct };
     }
   }
+
+  //Remover um produto por ID.
+  deleteProduct(id){
+    return this.products = this.products.filter(product => Number(product.id) !== Number(id))
+  }
+
+  //Função para gerar um ID único para o produto.
+  generateProductId(){
+    return Math.floor(Math.random() * 1000) + 1
+  }
+
+
 }
 
 export { ProductCrud };

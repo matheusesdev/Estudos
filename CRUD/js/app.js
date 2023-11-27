@@ -27,10 +27,18 @@ function updateTable(){
 
     products.forEach(product => {
         const row = document.createElement('tr')
+
+        //Formatar para unidade monetária BRL.
+        const formatter = new Intl.NumberFormat('pt-Br', {
+            style: 'currency',
+            currency: 'BRL'
+        })
+
+
         row.innerHTML = `
         <td>${product.id}</td>
         <td>${product.name}</td>
-        <td>${product.price}</td>
+        <td>${formatter.format(product.price)}</td>
         <td>${product.qtdEstoque}</td>
         <td id="actions">
 

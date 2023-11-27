@@ -3,7 +3,7 @@ class ProductCrud {
     this.products = [
       {
         id: this.generateProductId() ,
-        name: 'Ração premium 50KG ',
+        name: 'Ração Premium 50KG ',
         price: 14.94 ,
         qtdEstoque: 10
       }, 
@@ -16,7 +16,7 @@ class ProductCrud {
 
       {
         id: this.generateProductId() ,
-        name: 'Coleira para Gaato',
+        name: 'Coleira para Gato',
         price: 30.70 ,
         qtdEstoque: 44
       }, 

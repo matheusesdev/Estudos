@@ -34,10 +34,8 @@ function updateTable(){
         <td>${product.qtdEstoque}</td>
         <td id="actions">
 
-            <button type = "button" onclick="updateProduct(${product.id})">Editar</button>
-            <button type = "button" onclick="deleteProduct(${product.id})">Excluir</button>
-
-
+            <button type ="button" onclick="updateProduct(${product.id})">Editar</button>
+            <button type ="button" onclick="deleteProduct(${product.id})">Excluir</button>
         </td>
     `
     tableBody.appendChild(row)

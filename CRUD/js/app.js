@@ -5,7 +5,13 @@ const productCrud = new ProductCrud()
 console.log('MEUS PRODUTOS: ',productCrud.products);
 
 function addProduct() {
-    console.log('Criar produto');
+    const productName = document.getElementById('productName').value
+    const productPrice = document.getElementById('productPrice').value
+    const productQtd = document.getElementById('productQtd').value
+
+    console.log('name', productName0);
+    console.log('price', productPrice);
+    console.log('Qtd', productQtd);
 }
 
 function updateProduct() {
@@ -52,3 +58,14 @@ function updateTable(){
 }
 
 updateTable()
+
+const btnForm = document.getElementById('productForm')
+btnForm.addEventListener('submit', function(event){
+
+    //Previne o envio padrão do formulário
+    event.preventDefault()
+
+    //Chamar função e adicionar produto
+
+    addProduct()
+})

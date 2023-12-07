@@ -1,0 +1,224 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #000;
+  color: #fff;
+  height: 50px;
+  z-index: 1000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+header,
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  list-style: none;
+  margin: 0 auto;
+  height: 50px;
+}
+
+nav {
+  margin: 0 4rem 4rem 0;
+}
+
+nav ul li {
+  margin-left: 1rem;
+}
+
+h1 {
+  font-size: 23px;
+  margin: 1rem 1rem 1rem 1rem;
+}
+
+li {
+  margin-right: 1rem;
+}
+
+main {
+  margin-top: 64px;
+  padding: 1rem;
+}
+
+.transito {
+  margin-top: 50px;
+  padding: 1rem;
+  margin: 20px auto;
+  transition: all 0.7s ease-in-out;
+  background-size: 100%;
+  animation: zoom 10s infinite;
+  background-position: center;
+  border-radius: 20px;
+  background-attachment: fixed;
+  padding: 128px;
+  color: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.6) 10px 1px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  background-image: url(/img/transito.jpg);
+  color: #fff;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.993);
+  opacity: 0.9;
+}
+
+.transito h2 {
+  font-size: 2.5rem;
+  margin: 1rem 1rem 1rem 1rem;
+}
+
+.transito p {
+  font-size: 1.5rem;
+  line-height: 1.5em;
+}
+
+.celular {
+  margin-top: 50px;
+  padding: 1rem;
+  margin: 20px auto;
+  transition: all 0.7s ease-in-out;
+  background-size: 100%;
+  animation: zoom 10s infinite;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 20px;
+  border-color: #000;
+  background-attachment: fixed;
+  color: rgb(255, 255, 255);
+  text-shadow: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  background-image: url(/img/motorista-celular.jpg);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.993);
+  opacity: 0.9;
+}
+
+.celular h2 {
+  font-size: 2.5rem;
+  margin: 1rem 1rem 1rem 1rem;
+}
+
+.celular p {
+  font-size: 1.5rem;
+  line-height: 1.5em;
+}
+
+.cinto {
+  margin-top: 50px;
+  padding: 1rem;
+  margin: 20px auto;
+  transition: all 0.7s ease-in-out;
+  background-size: 100%;
+  animation: zoom 10s infinite;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 8px;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  background-image: url(/img/cinto.jpg);
+  color: #fff;
+  text-shadow: 0 0 10px rgb(0, 0, 0);
+  opacity: 0.9;
+}
+
+.cinto h2 {
+  font-size: 2.5rem;
+  margin: 1rem 1rem 1rem 1rem;
+}
+
+.cinto p {
+  font-size: 1.5rem;
+  line-height: 1.5em;
+}
+
+.servicos {
+  padding: 20px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  border-top: 5px solid white;
+}
+#services {
+  padding: 20px;
+  font-size: 40px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  text-align: center;
+  border-bottom: 5px solid rgb(187, 184, 184);
+}
+#serv-cell,
+#serv-cinto,
+#multa-faq {
+  padding: 20px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  color: rgb(255, 255, 255);
+  align-items: center;
+  font-size: 25px;
+  border: 2px solid white;
+}
+.servc,
+.cell,
+.cint,
+.mult {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  margin: 10px;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+  width: 100%;
+  padding: 16px 0;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+
+.transito,
+.celular,
+.cinto,
+.servicos {
+  padding: 128px;
+}
+
+.servicos {
+  padding-bottom: 32px;
+}

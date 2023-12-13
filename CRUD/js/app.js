@@ -9,9 +9,29 @@ function addProduct() {
     const productPrice = document.getElementById('productPrice').value
     const productQtd = document.getElementById('productQtd').value
 
-    console.log('name', productName0);
-    console.log('price', productPrice);
-    console.log('Qtd', productQtd);
+// Verifica se o nome do produto e o preço são válidos
+if (productName && !isNaN(productPrice) && productQtd) {
+    const newProduct = {
+        id: productCrud.generateProductId(),
+        name: productName,
+        price: Number(productPrice),
+        qtdEstoque: Number(productQtd),
+    };
+
+    // Adiciona o novo produto à lista
+    productCrud.addProduct(newProduct);
+
+    // Atualiza a tabela
+    updateTable();
+
+    //Limpa o formulário
+    document.getElementById('productName').value = '';
+    document.getElementById('productPrice').value = '';
+    document.getElementById('productQtd').value = '';  
+
+    } else{
+        alert('Por favor, preencha todos os campos!')
+    }
 }
 
 function updateProduct() {
@@ -25,12 +45,14 @@ function deleteProduct() {
 
 //Função para atualizar e listar tabela com produtos.
 function updateTable(){
-    const tableBody = document.querySelector('#productTable')
+    const tableBody = document.querySelector('#productTable tbody')
+
+    //Garantir que a tabela esteja vazia
+    tableBody.innerHTML = ''
+
 
     //Obter todos os produtos.
     const products = productCrud.getAllProducts()
-    console.log(products);
-
     products.forEach(product => {
         const row = document.createElement('tr')
 
@@ -57,15 +79,12 @@ function updateTable(){
     })
 }
 
-updateTable()
+updateTable();
 
-const btnForm = document.getElementById('productForm')
-btnForm.addEventListener('submit', function(event){
-
-    //Previne o envio padrão do formulário
-    event.preventDefault()
-
-    //Chamar função e adicionar produto
-
-    addProduct()
-})
+const btnForm = document.getElementById('productForm');
+btnForm.addEventListener('submit', function (event) {
+    // Previne o envio padrão do formulário
+    event.preventDefault();
+    // Chama a função addProduct diretamente do escopo do módulo
+    addProduct();
+});

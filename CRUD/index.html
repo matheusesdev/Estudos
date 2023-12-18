@@ -40,5 +40,25 @@
         <!-- Conteúdo da Tabela que será preenchido dinâmicamente via JavaScript. -->
     </tbody>
 </table>
+<div id="updateModal" class="modal">
+    <div class="modal-content">
+        <span class="close" id="closeModalBtn">&times;</span>
+        <h2>Editar Produto</h2>
+        <form id="updateForm">
+            <label for="updateProductName">Nome do Produto:</label>
+            <input type="text" id="updateProductName">
+
+            <label for="updateProductPrice">Preço do Produto:</label>
+            <input type="text" id="updateProductPrice">
+
+            <label for="updateProductQtd">Quantidade em Estoque:</label>
+            <input type="number" id="updateProductQtd">
+            
+
+            <button type="button" id="updateProductBtn"><i class="fa-solid fa-pen"></i> Atualizar Produto</button>
+        </form>
+    </div>
+</div>
+
 </body>
 </html>

@@ -94,6 +94,19 @@ td:last-child button{
     background-color: red;
 }
 
+#btnZap a {
+    color: black;
+    text-decoration: none;
+    transition: 0.5s;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+#btnZap a:hover{
+    opacity: 0.5;
+}
+
 #actions button:hover{
     opacity: 0.7;
     transition: .2s;

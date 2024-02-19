@@ -21,7 +21,7 @@ if (10 % 2 === 0) {
     Retorno:
     1. Retorna a mensagem "é Par" ou "é ímpar".
 
-    Em resumo, o código é uma implementação de um agoritmo que decide se um número é par ou ímpar com base em um teste condicional simples. Essa sequência lógica de instruções representa a essência de um algoritmo, fornecendo uma solução clara e definida para um problema especifico. 
+    Em resumo, o código é uma implementação de um algoritmo que decide se um número é par ou ímpar com base em um teste condicional simples. Essa sequência lógica de instruções representa a essência de um algoritmo, fornecendo uma solução clara e definida para um problema especifico. 
 */
 
 
@@ -41,7 +41,7 @@ let texto = "Olá, mundo!"; // Declara uma variável chamada texto e atribui a e
 
 // Este código ilustra o uso de variáveis para armazenar diferentes tipos de dados, como números inteiros, decimais e strings, conforme mencionado no texto.
 
-//Estruturas de Controle: mecanismos para controlar o fluxo de execução do programa. Isso inclui estruturas condiocionais (if, else) para tomar decisões e estruturas de repetição (loops) para executar tarefas repetitivas.
+//Estruturas de Controle: mecanismos para controlar o fluxo de execução do programa. Isso inclui estruturas condicionais (if, else) para tomar decisões e estruturas de repetição (loops) para executar tarefas repetitivas.
 // Exemplo de estrutura condicional (if, else)
 let numero = 15; //Declara uma variável numero e atribui a ela o valor 15.
 if (numero % 2 === 0){
@@ -105,10 +105,10 @@ if (temCafe && !temPao){
 //Arrays e Estruturas de dados.
 
 //Exemplo de uso de arrays (vetores) - lista de compras
-let listaDeCompas = ['Maçãs', 'Bananas', 'Leite', 'Pão', 'Ovos'];
+let listaDeCompras = ['Maçãs', 'Bananas', 'Leite', 'Pão', 'Ovos'];
 
 //Adicionando um item à lista
-listaDeCompas.push ('Queijo');
+listaDeCompras.push ('Queijo');
 
 //Exibindo os itens da lista no console
 console.log('Itens na lista de compras:');

@@ -69,9 +69,9 @@ console.log(_teste, $teste);
 // console.log(Math.max(29, 330, 1202, 230));
 // console.log(Math.ceil(2.23));
 
-// //6 -Funções do objeto Console
-// // O console também é um objeto, assim como Math, tem várias funções
-// // A sua principal função é exibir uma mensagem de alguma categoria na aba de console.
+// 6 -Funções do objeto Console
+//O console também é um objeto, assim como Math, tem várias funções
+// A sua principal função é exibir uma mensagem de alguma categoria na aba de console.
 // console.log("Teste");
 // console.error("Error");
 // console.warn("Aviso!");
@@ -146,3 +146,142 @@ if (userName === "José") {
 } else {
   console.log("Nenhuma condição foi aceita!");
 }
+
+
+//10 - Estruturas de Repetição:
+// O que são estruturas de repetição? São um bloco de código que se repetem até uma condição ser satisfeita;
+// Isso evita a repetição desnecessária do nosso código;
+// Algumas das estruturas são? for, white e do while;
+// As suas sintaxes são diuferentes, mas as duas chegam no mesmo resultado;
+// Temos que nos atentar ao loop infinito;
+// O loop infinito é um loop que não tem fim, e isso pode travar o nosso programa;
+
+//Estrutura de repetiçãa: while
+// O while faz uma ação até que uma condição seja atingida;
+// A condição é validada antes da execução do bloco de código;
+//No bloco definimos o fim do loop, com a alteração da variável de controle;
+//Temos que definir também um incrementador, que é quem faz a condição ser atingida;
+
+let p  = 0;
+while(p < 5){
+    console.log(p);
+    p++;
+}
+
+let o = 0;
+while (p < 4) {
+  console.log(`Repetindo ${o}`)
+  o = o + 1;
+}
+
+//Estrutura de repetição: do while;
+ /* O do while também é uma estrutura de repetição;
+A sintaxe é semelhante ao while;
+Este recurso não é tão utilizado */
+
+let F = 10;
+ do{
+  console.log(`Valor de F: ${F}`)
+  F --;
+ } while (F < 10);
+
+ //Estrutura de repetição: for
+ /*
+O for é a estrutura de repetição mais utilizada;
+Ela condensa toda lógica em uma linha, ao primeiro olhar parece ser mais complexa mas simplifica as coisas;
+Na própria declaração, colocamos: incrementador, condição final e progressão
+ */
+for (let i = 0; i < 10; i++) {
+  const i = array[i];
+  
+}
+
+let r =  10;
+
+for(r; r > 0 ; r = r - 1 ){
+  console.log('O R está diminuindo')
+}
+
+//Identação é a forma de organizar o código, para que ele fique mais legível;
+for (let u = 0; u < 10; u++){
+  if(u * 2 > 10){
+    console.log("O número é maior que 10")
+  } else if( u / 2 === 0 ){
+    console.log("Deu 0")
+  }
+}
+
+
+// 11 - Break : forçando a saída de um loop
+
+/*
+Com a instrução de break podemos ejetar um loop, ffazendo com que as repetições cessem, mesmo que a condição não tenha sido atingida;
+Isso ppode poupar memória, pois o código será executado menos vezes;
+Não é tão comum, mas é um recurso válido da linguagem;
+*/
+
+for (let i = 0; i < 10; i++) {
+  if (i === 5) {
+    break;
+  }
+  console.log(i);
+}
+
+// 12 - Continue: pulando a execução de um loop
+/*
+Ela pode pular uma ou mais execuções do loop;
+É um recurso utilizado de forma semelhante ao break;
+*/
+
+for (let i = 0; i < 10; i++) {
+  if (i % 2 == 0) {
+    continue;
+  }
+  console.log(i);
+}
+
+//13 - Switch: Estrutura de controle
+
+/*
+O switch pode ser utilizado para organização de um excesso de if/else;
+Cada if seria um case;
+Para cada case, temos que adicionar um break;
+E temos o default, que é como o else
+*/
+
+const job = 'Programador'
+
+switch(job){
+  case 'Programador':
+    console.log("Você é um DEV")
+    break;  
+    case 'Analista':
+      console.log("Você é um analista")
+      break;
+      default:
+        console.log("Você não é nada")
+}
+
+//Switch 'Errado'
+
+const l = 100;
+switch (l) {
+  case 100:
+    console.log("É 100");
+  case 200:
+    console.log("É 200");
+  default:
+    console.log("Não é nada");
+}
+
+//Essa é uma maneira errada de criar um switch.
+
+//Conveção de nome de variáveis
+
+/*
+Nos casos abaixo temos a pior forma até a melhor forma de nomear uma variável:
+1 - let programadorcadastrado; (ruim)
+2 - let programador_cadastrado;
+3 - let programadorCadastrado; (mais utilizado / é a forma recomendada de nomear uma variável );
+4 - let ProgramadorCadastrado; 
+*/

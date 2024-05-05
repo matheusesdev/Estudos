@@ -127,3 +127,118 @@ parOuImpar(4);
 // A arrow function pode ter uma sintaxe mais resumida;
 // Muito útil para funções pequenas;
 // Onde omitimos as {} e também a instrução return
+// 6 - Mais sobre arrow fuctions;
+
+const raizQuadrada = (x) => {
+  return x * x;
+};
+
+console.log(raizQuadrada(3));
+
+// Nesse caso estamos emitindo o bloco e tendo o mesmo resultado da arrow funcion acima.
+const raizQuadrada2 = (x) => x * x;
+console.log(raizQuadrada2(2));
+console.log(raizQuadrada2(22));
+
+const helloWord = () => console.log("Hellow Word");
+
+helloWord();
+
+// Argumentos opcionais
+// Os argumentos/parâmetros nas funções são obrigatórios, precisamos passar todos;
+// Porém existem casos de funções que pode funcionar sem algum dos argumentos;
+// Para resolver isso podemos fazer uma checagem do parâmetro com um if;
+
+//  7 - Parâmetro opcional
+const multiplication = function (m, n) {
+  if (n === undefined) return m * 2;
+  else return m * n;
+};
+console.log(multiplication(5));
+console.log(multiplication(22));
+
+const greeting = (name) => {
+  if (!name) {
+    console.log("Olá!");
+    return;
+  }
+  console.log(`Olá ${name}`);
+};
+greeting("Matheus");
+greeting();
+
+// Argumento com valor Default;
+// Valor default é quando o argumento tem um valor prévio;
+// Se for passado com um novo valor, o default é substituido;
+// Se não, o default é utilizado na função;
+// 8 - Valor default;
+
+// Na primeira linha, o valor de greet já estava estabelecido
+
+const customGreeting = (name, greet = "Olá") => {
+  return `${greet}, ${name}!`;
+};
+// O primeiro console.log utilizou o valor de greet que já existia
+// No segundo console.log o "Bom dia" assumiu o valor de greet que existia
+console.log(customGreeting("Matheus"));
+console.log(customGreeting("Matheus", "Bom dia"));
+
+const repeatText = (text, repeat = 2) => {
+  for (let index = 0; index < repeat; index++) {
+    console.log(text);
+  }
+};
+repeatText();
+repeatText("Olá");
+repeatText("Repete 5 vezes", 5);
+
+// Closures
+// Closure é um conjunto de funções, onde temos um reaproveitamento do escopo interno de uma função;
+// Pois este escopo não pode ser acessado de fora da função, já que éum bloco;
+// Então há funções internas que aproveitam o escopo, e são chamadas de closure;
+// É um conceito abstrado sem muito contexto de aplicação, e pode ficar difícil de aprender.
+//  9 - Closure
+
+// O código define e invoca uma função chamada someFunction. Dentro dessa função, há várias coisas acontecendo;
+// Primeiro, uma variável txt é declarada e inicializada com a string "Alguma coisa". Essa variável é local para a função someFunction e não pode ser acessada fora dela.
+// Em seguida, uma função interna chamada display é declarada. Essa função, quando chamada, imprime o valor da variável txt no console. Como display é uma função interna de someFunction, ela tem acesso ao escopo de someFunction e, portanto, pode acessar a variável txt.
+// Depois que a função display é declarada, ela é imediatamente chamada. Isso resulta na string "Alguma coisa" sendo impressa no console.
+// Finalmente, após a definição de someFunction, a função é chamada. Isso inicia todo o processo descrito acima.
+// Basicamente, uma CLOSURE ocorre quando uma função tem acesso ao escopo pai, mesmo depois que o escopo pai foi fechado;
+// No código apresentado a função display tem acesso à variável txt do escopo da função someFuction, mesmo quando é chamada fora do escopo direto de um txt. Isso é possível por causa do conceito de closure
+
+function someFunction() {
+  let txt = "Alguma coisa";
+  function display() {
+    console.log(txt);
+  }
+  display();
+}
+someFunction();
+
+function mesmaCoisa() {
+  let number = 20;
+  function display2() {
+    console.log(number);
+  }
+  display2();
+}
+mesmaCoisa();
+bb
+// 10 - Mais sobre CLOSURES
+// As Closures também podem servir para salvar os resultados já executados;
+// Criando uma espécie de incrementação;
+// Assim temos uma variável que executa uma função e modifica seu valor;
+
+REVER O CONCEITO DE CLOSURE
+const multiplicationClosure = (n) => {
+  return (m) => {
+    return m * n;
+  };
+};
+
+const c5 = multiplicationClosure(22);
+const c3 = multiplicationClosure(221);
+
+console.log(c3(221));
+console.log(c5(22));

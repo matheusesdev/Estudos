@@ -230,7 +230,7 @@ bb
 // Criando uma espécie de incrementação;
 // Assim temos uma variável que executa uma função e modifica seu valor;
 
-REVER O CONCEITO DE CLOSURE
+//REVER O CONCEITO DE CLOSURE
 const multiplicationClosure = (n) => {
   return (m) => {
     return m * n;
